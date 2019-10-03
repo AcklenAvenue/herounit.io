@@ -8,7 +8,7 @@ include includes/header.pug
 			.welcome-description
 				p.margin-bottom-small Focus on your business while we focus on your software. Whether you need a full-stack development team to develop your dream from scratch, or a proactive team of experts ready to provide support and mantainance, HeroUnit is the superhero you can rely on!
 			.buttongroup.hide-for-small-only
-				a.button.secondary(href="request.html") Request a Quote
+				a.button.secondary.intercom(href="#") Request a Quote
 				a.button.clear.secondary(href="#learnmore") Learn More
 		
 		.cell.small-6.medium-6: .welcome-graphic
@@ -346,13 +346,13 @@ include includes/header.pug
 				p Superpower:
 				strong.superpower Agility, strength, speed, endurance, and reaction time
 
-		.card-staff.column.column-block
-			.staff-photo
-			.staff-info
-				img(src="src/img/staff/jorgepadilla.jpg")
-				h6 Jorge Padilla
-				p Superpower:
-				strong.superpower Monster strength to tackle problems
+		//- .card-staff.column.column-block
+		//- 	.staff-photo
+		//- 	.staff-info
+		//- 		img(src="src/img/staff/jorgepadilla.jpg")
+		//- 		h6 Jorge Padilla
+		//- 		p Superpower:
+		//- 		strong.superpower Monster strength to tackle problems
 
 		.card-staff.column.column-block
 			.staff-photo
@@ -383,6 +383,7 @@ include includes/header.pug
 	p We want to hear from you! Please feel free to request a custom quote for your product or project and we'll happy to assist you.
 	h4 info@herounit.io
 	h6 (615) 988-4700
+	a.button.secondary.intercom(href="#") Chat With Us
 	button.close-button(data-close='', aria-label='Close modal', type='button')
 		span(aria-hidden='true') ×
 

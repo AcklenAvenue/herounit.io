@@ -40,7 +40,7 @@
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
             <li><a href="http://awkwardcoder.com/" target="_blank">Blog</a></li>
-            <li class="hide-for-small-only"><a class="button primary" href="request.html">Quote</a></li>
+            <li class="hide-for-small-only"><a class="button primary intercom" href="#">Let's Talk</a></li>
           </ul>
         </div>
         <div class="top-bar-right">
@@ -57,7 +57,7 @@
       <div class="welcome-description">
         <p class="margin-bottom-small">Focus on your business while we focus on your software. Whether you need a full-stack development team to develop your dream from scratch, or a proactive team of experts ready to provide support and mantainance, HeroUnit is the superhero you can rely on!</p>
       </div>
-      <div class="buttongroup hide-for-small-only"><a class="button secondary" href="request.html">Request a Quote</a><a class="button clear secondary" href="#learnmore">Learn More</a></div>
+      <div class="buttongroup hide-for-small-only"><a class="button secondary intercom" href="#">Request a Quote</a><a class="button clear secondary" href="#learnmore">Learn More</a></div>
     </div>
     <div class="cell small-6 medium-6">
       <div class="welcome-graphic">
@@ -400,13 +400,6 @@
     </div>
     <div class="card-staff column column-block">
       <div class="staff-photo"></div>
-      <div class="staff-info"><img src="src/img/staff/jorgepadilla.jpg">
-        <h6>Jorge Padilla</h6>
-        <p>Superpower:</p><strong class="superpower">Monster strength to tackle problems</strong>
-      </div>
-    </div>
-    <div class="card-staff column column-block">
-      <div class="staff-photo"></div>
       <div class="staff-info"><img src="src/img/staff/josuevidaur.jpg">
         <h6>Josue Vidaur</h6>
         <p>Superpower:</p><strong class="superpower">Timetravel, fix bugs before they happend</strong>
@@ -432,7 +425,7 @@
   <h1>Get in Touch</h1>
   <p>We want to hear from you! Please feel free to request a custom quote for your product or project and we'll happy to assist you.</p>
   <h4>info@herounit.io</h4>
-  <h6>(615) 988-4700</h6><button class="close-button" data-close="" aria-label="Close modal" type="button"><span aria-hidden="true">×</span></button>
+  <h6>(615) 988-4700</h6><a class="button secondary intercom" href="#">Chat With Us</a><button class="close-button" data-close="" aria-label="Close modal" type="button"><span aria-hidden="true">×</span></button>
 </div>
 <div class="contact-footer section" id="contact">
   <div class="section-head text-center">
@@ -440,7 +433,7 @@
     <h4>How can we save your world today?</h4>
   </div>
   <div class="grid-x grid-margin-x">
-    <div class="cell small-6 text-right"><a class="button" href="request.html">Request a Quote</a></div>
+    <div class="cell small-6 text-right"><a class="button intercom" href="#">Request a Quote</a></div>
     <div class="cell small-6 text-left"><a class="button hollow primary" href="#" data-open="contactform">Drop us a Line</a></div>
   </div>
 </div>
@@ -542,6 +535,11 @@
     $('#contactform').foundation('reveal', 'open');
   });
 </script>
+<script src="js/jquery.js"></script>
+<script src="js/what-input.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/foundation.js"></script>
+<script src="js/app.js"></script>
 <script>
   window.intercomSettings = {
     app_id: "wta4t3f8",
@@ -592,8 +590,9 @@
     }
   })();
 </script>
-<script src="js/jquery.js"></script>
-<script src="js/what-input.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/foundation.js"></script>
-<script src="js/app.js"></script>
+<script>
+  $(".intercom").click(function(e)
+  {
+    Intercom('show');
+  });
+</script>
