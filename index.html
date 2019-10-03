@@ -309,23 +309,9 @@
     </div>
     <div class="card-staff column column-block">
       <div class="staff-photo"></div>
-      <div class="staff-info"><img src="src/img/staff/chrisescalon.jpg">
-        <h6>Christopher Escalon</h6>
-        <p>Superpower:</p><strong class="superpower">X-Ray vision, no bug can scape my sight</strong>
-      </div>
-    </div>
-    <div class="card-staff column column-block">
-      <div class="staff-photo"></div>
       <div class="staff-info"><img src="src/img/staff/ronyvidaur.jpg">
         <h6>Rony Vidaur</h6>
         <p>Superpower:</p><strong class="superpower">Shapeshifting, adapt to both backend and frontend development</strong>
-      </div>
-    </div>
-    <div class="card-staff column column-block">
-      <div class="staff-photo"></div>
-      <div class="staff-info"><img src="src/img/staff/rafaelsequeiros.jpg">
-        <h6>Rafaell Sequeiros</h6>
-        <p>Superpower:</p><strong class="superpower">Cyborg power, being able to absorb new technologies naturally.</strong>
       </div>
     </div>
     <div class="card-staff column column-block">
@@ -389,6 +375,55 @@
       <div class="staff-info"><img src="src/img/staff/fernandamezquita.jpg">
         <h6>Fernanda Mezquita</h6>
         <p>Superpower:</p><strong class="superpower">Hyperactive Management</strong>
+      </div>
+    </div>
+    <div class="card-staff column column-block">
+      <div class="staff-photo"></div>
+      <div class="staff-info"><img src="src/img/staff/edgarContreras.jpg">
+        <h6>Edgar Contreras</h6>
+        <p>Superpower:</p><strong class="superpower">Spider senses for code refactoring</strong>
+      </div>
+    </div>
+    <div class="card-staff column column-block">
+      <div class="staff-photo"></div>
+      <div class="staff-info"><img src="src/img/staff/inti.jpg">
+        <h6>Inti Velásquez</h6>
+        <p>Superpower:</p><strong class="superpower">Non-stop learning and improving</strong>
+      </div>
+    </div>
+    <div class="card-staff column column-block">
+      <div class="staff-photo"></div>
+      <div class="staff-info"><img src="src/img/staff/bily.jpg">
+        <h6>Bily Fernandez</h6>
+        <p>Superpower:</p><strong class="superpower">Agility, strength, speed, endurance, and reaction time</strong>
+      </div>
+    </div>
+    <div class="card-staff column column-block">
+      <div class="staff-photo"></div>
+      <div class="staff-info"><img src="src/img/staff/jorgepadilla.jpg">
+        <h6>Jorge Padilla</h6>
+        <p>Superpower:</p><strong class="superpower">Monster strength to tackle problems</strong>
+      </div>
+    </div>
+    <div class="card-staff column column-block">
+      <div class="staff-photo"></div>
+      <div class="staff-info"><img src="src/img/staff/josuevidaur.jpg">
+        <h6>Josue Vidaur</h6>
+        <p>Superpower:</p><strong class="superpower">Timetravel, fix bugs before they happend</strong>
+      </div>
+    </div>
+    <div class="card-staff column column-block">
+      <div class="staff-photo"></div>
+      <div class="staff-info"><img src="src/img/staff/josuesalinas.jpg">
+        <h6>Josue Salinas</h6>
+        <p>Superpower:</p><strong class="superpower">MindMaster allowing to see solutions where other can't</strong>
+      </div>
+    </div>
+    <div class="card-staff column column-block">
+      <div class="staff-photo"></div>
+      <div class="staff-info"><img src="src/img/staff/jcrisanto.jpg">
+        <h6>Jorge Crisanto</h6>
+        <p>Superpower:</p><strong class="superpower">Super human resistance when coding</strong>
       </div>
     </div>
   </div>
@@ -507,16 +542,56 @@
     $('#contactform').foundation('reveal', 'open');
   });
 </script>
-<!-- Intercom.io -->
- <script>
+<script>
   window.intercomSettings = {
     app_id: "wta4t3f8",
     action_color: "#1962BA",
     background_color: "#1962BA"
   };
 </script>
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/wta4t3f8';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
-<!-- END Intercom -->
+<script>
+  (function()
+  {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function")
+    {
+      ic('reattach_activator');
+      ic('update', w.intercomSettings);
+    }
+    else
+    {
+      var d = document;
+      var i = function()
+      {
+        i.c(arguments);
+      };
+      i.q = [];
+      i.c = function(args)
+      {
+        i.q.push(args);
+      };
+      w.Intercom = i;
+      var l = function()
+      {
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://widget.intercom.io/widget/wta4t3f8';
+        var x = d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      };
+      if (w.attachEvent)
+      {
+        w.attachEvent('onload', l);
+      }
+      else
+      {
+        w.addEventListener('load', l, false);
+      }
+    }
+  })();
+</script>
 <script src="js/jquery.js"></script>
 <script src="js/what-input.js"></script>
 <script src="js/slick.min.js"></script>
