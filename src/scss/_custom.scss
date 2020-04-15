@@ -452,6 +452,35 @@ input,select {
 	background-blend-mode: normal;
 }
 
+// Tech names
+
+.tabs {
+	border:none;
+}
+
+.tabs a,li {
+	font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.tabs-panel li {
+	padding: 8px 0;
+}
+
+.tabs-content.vertical {
+    border: none;
+}
+
+.tabs-title>a:focus, .tabs-title>a[aria-selected='true'] {
+    background: #1962BA;
+    color: #ffffff;
+    border-radius: 100em;
+}
+
+.tech-svg{
+	width: 35px;
+    margin: 0 9px 0 0;
+}
+
 
 // why us
 
@@ -673,5 +702,15 @@ footer {
 
 .margin-bottom-big {
 	margin-bottom: 50px;
+	clear: both;
+}
+
+.margin-top-small {
+	margin-top: 25px;
+	clear: both;
+}
+
+.margin-top-big {
+	margin-top: 50px;
 	clear: both;
 }

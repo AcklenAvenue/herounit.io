@@ -49,25 +49,144 @@ include includes/header.pug
 			
 
 #technologies.section.grid-container.margin-bottom-big
-	.grid-x.grid-margin-y.grid-margin-x
-		.technologies-logos
+	.grid-container.margin-bottom-big
+		.grid-x
+			.cell.medium-4
+				h1 Technologies
+				p Most of our custom software services work is in these technologies, but our broad skill set gives us the flexibility to explore and choose the right technology for each project.
 
-#factsAndTech.section.grid-container.margin-bottom-big
-	.tech
-		.tech__content.small-6
-			h2 Technologies
-			p.tech__description Most of our custom software services work is in these technologies, but our broad skill set gives us the flexibility to explore and choose the right technology for each project.
-			ul class="tech__tabs">
-				li(rel="tech__panel2" class="tech--active")Web
-				li(rel="tech__panel1") Mobile
-				li(rel="tech__panel3") Desktop
-		.tech__img.small-6
-			#tech__panel1.tech__panel
-				img(src="img/hu-mobile-tech.png" alt="Acklen Avenue Mobile Technology")
-			#tech__panel2".tech__panel tech--active
-				img(src="img/hu-web-tech.png" alt="Acklen Avenue Web Technology")
-			#tech__panel3.tech__panel
-				img(src="img/hu-desktop-tech.png" alt="Acklen Avenue Desktop Technology")
+				ul#example-tabs.vertical.tabs(data-tabs='')
+					li.tabs-title.is-active
+						a(href='#panel1v', aria-selected='true') Web
+					li.tabs-title
+						a(href='#panel2v') Mobile
+					li.tabs-title
+						a(href='#panel3v') Desktop
+
+			.cell.medium-8
+				.tabs-content.vertical(data-tabs-content='example-tabs')
+					#panel1v.tabs-panel.is-active
+						.grid-x.grid-margin-y
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Front-end
+									li
+										img.tech-svg(src="src/img/tech/react.svg", alt="")
+										span React
+									li
+										img.tech-svg(src="src/img/tech/vue.svg", alt="")
+										span VUE
+									li
+										img.tech-svg(src="src/img/tech/angular.svg", alt="")
+										span Angular
+									li
+										img.tech-svg(src="src/img/tech/javascript.svg", alt="")
+										span Javascript
+
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Back-end
+									li
+										
+										img.tech-svg(src="src/img/tech/node.svg", alt="") 
+										span Node
+									li
+										img.tech-svg(src="src/img/tech/ruby.svg", alt="")
+										span Ruby
+									li
+										img.tech-svg(src="src/img/tech/python.svg", alt="")
+										span Python
+									li
+										img.tech-svg(src="src/img/tech/php.svg", alt="")
+										span PHP
+									li
+										img.tech-svg(src="src/img/tech/net.svg", alt="")
+										span .NET
+
+					#panel2v.tabs-panel
+						.grid-x.grid-margin-y
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Front-end
+									li
+										img.tech-svg(src="src/img/tech/apple.svg", alt="")
+										span IOS
+									li
+										img.tech-svg(src="src/img/tech/android.svg", alt="")
+										span ANDROID
+									li
+										img.tech-svg(src="src/img/tech/react.svg", alt="")
+										span React Native
+									li
+										img.tech-svg(src="src/img/tech/angular.svg", alt="")
+										span Angular
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Back-end
+									li
+										
+										img.tech-svg(src="src/img/tech/node.svg", alt="") 
+										span Node
+									li
+										img.tech-svg(src="src/img/tech/ruby.svg", alt="")
+										span Ruby
+									li
+										img.tech-svg(src="src/img/tech/python.svg", alt="")
+										span Python
+									li
+										img.tech-svg(src="src/img/tech/php.svg", alt="")
+										span PHP
+									li
+										img.tech-svg(src="src/img/tech/net.svg", alt="")
+										span .NET
+
+					#panel3v.tabs-panel
+						.grid-x.grid-margin-y
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Front-end
+									li
+										img.tech-svg(src="src/img/tech/electron.svg", alt="")
+										span Electron
+									li
+										img.tech-svg(src="src/img/tech/react.svg", alt="")
+										span react
+									li
+										img.tech-svg(src="src/img/tech/vue.svg", alt="")
+										span Vue
+									li
+										img.tech-svg(src="src/img/tech/angular.svg", alt="")
+										span Angular
+									li
+										img.tech-svg(src="src/img/tech/apple.svg", alt="")
+										span Mac OS
+									li
+										img.tech-svg(src="src/img/tech/window.svg", alt="")
+										span Windows
+									li
+										img.tech-svg(src="src/img/tech/linux.svg", alt="")
+										span linux
+
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Back-end
+									li
+										
+										img.tech-svg(src="src/img/tech/node.svg", alt="") 
+										span Node
+									li
+										img.tech-svg(src="src/img/tech/ruby.svg", alt="")
+										span Ruby
+									li
+										img.tech-svg(src="src/img/tech/python.svg", alt="")
+										span Python
+									li
+										img.tech-svg(src="src/img/tech/php.svg", alt="")
+										span PHP
+									li
+										img.tech-svg(src="src/img/tech/net.svg", alt="")
+										span .NET
+
 
 #whyus.section.grid-container.margin-bottom-big
 	.section-head.text-center
