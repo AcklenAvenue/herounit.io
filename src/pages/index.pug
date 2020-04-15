@@ -47,129 +47,146 @@ include includes/header.pug
 			.serv-picture.sp6
 			h5 Project Management
 			
-	table.table-services.unstriped
-		thead
-			tr
-				th.head-service Service
-				th(style="width: 17%") Basic
-				th Premium
-				th.col-gold
-					i.icon.icon-left(data-feather="star")
-					| Gold
-		tbody
-			tr
-				td.text-left 
-					h6 Included Credits Per Month
-				td 40
-				td.col-mid 80
-				td 120
-			tr
-				td.text-left 
-					h6 Free Ramp-UP
-				td 1 Week
-				td.col-mid 1 Week
-				td 1 Week
-			tr
-				td.text-left
-					h6 Development
-					p Emergency Response, General Coding and Bug Fixes, Technical Debt Management, Dependency Management
-				td: i.icon.icon-red(data-feather="check")
-				td.col-mid: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Operations
-					p Work with 3rd Party Service Providers, Build/Deployment, Automation, Server Diagnosis/Repair, General Infrastructure and Maintenance.
-				td: i.icon.icon-red(data-feather="check")
-				td.col-mid: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Testing
-					p Regression Testing, Load/Performance Testing, Functional Testing, Security/Penetration Testing, Test Automation.
-				td: i.icon.icon-red(data-feather="check")
-				td.col-mid: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Design
-					p Development Assets, Logo design/updates, Prototyping.
-				td: i.icon.icon-red(data-feather="check")
-				td.col-mid: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left(colspan='4') 
-					h5 Additional Offerings:
-			tr
-				td.text-left
-					h6 Transparency Tools
-					p Access to Issue Management Tools, Access to Team Chat, Monthly Report of Work Done
-				td: i.icon.icon-red(data-feather="check")
-				td.col-mid: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Monitoring
-					p Infrastructure Costs, Performance, Database Server Status, Web Server Status, 3rd Party Integration Status, Application Usage, SEO Ranking.
-				td: i.icon.icon-red(data-feather="check")
-				td.col-mid: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Strategy
-					p SEO Optimization, Ongoing Backlog Review
-				td
-				td.col-mid: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Health
-					p Upgrade packages for minor version updates and security patches, Increase test coverage.
-				td
-				td.col-mid: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Advisory
-					p Monthly CTO Calls, Product Manager Calls
-				td 1 Product Manager Call
-				td.col-mid 1 CTO Call + 2 Product Manager Calls
-				td 2 CTO Calls + 4 Product Manager Calls
-			tr
-				td.text-left
-					h6 Operations
-					p Domain name and hosting maintenance and renewal, Upgrades & changes to integrations, platforms, OSs and Scheduled offsite backups
-				td
-				td.col-mid
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Fully Alocated Team
-					p Principled Developers,,Tenacious Software Testers
-				td
-				td.col-mid
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Monthly Rate
-				td
-					a#requestlink(href="#",data-open="contactform")
-						i.icon.icon-left(data-feather="mail")
-						| Request
-				td.col-mid
-					a#requestlink(href="#",data-open="contactform")
-						i.icon.icon-left(data-feather="mail")
-						| Request
-				td
-					a#requestlink(href="#",data-open="contactform")
-						i.icon.icon-left(data-feather="mail")
-						| Request
-
-					
 
 #technologies.section.grid-container.margin-bottom-big
-	.grid-x.grid-margin-y.grid-margin-x
-		.technologies-logos
+	.grid-container.margin-bottom-big
+		.grid-x
+			.cell.medium-4
+				h1 Technologies
+				p Most of our custom software services work is in these technologies, but our broad skill set gives us the flexibility to explore and choose the right technology for each project.
+
+				ul#example-tabs.vertical.tabs(data-tabs='')
+					li.tabs-title.is-active
+						a(href='#panel1v', aria-selected='true') Web
+					li.tabs-title
+						a(href='#panel2v') Mobile
+					li.tabs-title
+						a(href='#panel3v') Desktop
+
+			.cell.medium-8
+				.tabs-content.vertical(data-tabs-content='example-tabs')
+					#panel1v.tabs-panel.is-active
+						.grid-x.grid-margin-y
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Front-end
+									li
+										img.tech-svg(src="src/img/tech/react.svg", alt="")
+										span React
+									li
+										img.tech-svg(src="src/img/tech/vue.svg", alt="")
+										span VUE
+									li
+										img.tech-svg(src="src/img/tech/angular.svg", alt="")
+										span Angular
+									li
+										img.tech-svg(src="src/img/tech/javascript.svg", alt="")
+										span Javascript
+
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Back-end
+									li
+										
+										img.tech-svg(src="src/img/tech/node.svg", alt="") 
+										span Node
+									li
+										img.tech-svg(src="src/img/tech/ruby.svg", alt="")
+										span Ruby
+									li
+										img.tech-svg(src="src/img/tech/python.svg", alt="")
+										span Python
+									li
+										img.tech-svg(src="src/img/tech/php.svg", alt="")
+										span PHP
+									li
+										img.tech-svg(src="src/img/tech/net.svg", alt="")
+										span .NET
+
+					#panel2v.tabs-panel
+						.grid-x.grid-margin-y
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Front-end
+									li
+										img.tech-svg(src="src/img/tech/apple.svg", alt="")
+										span IOS
+									li
+										img.tech-svg(src="src/img/tech/android.svg", alt="")
+										span ANDROID
+									li
+										img.tech-svg(src="src/img/tech/react.svg", alt="")
+										span React Native
+									li
+										img.tech-svg(src="src/img/tech/angular.svg", alt="")
+										span Angular
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Back-end
+									li
+										
+										img.tech-svg(src="src/img/tech/node.svg", alt="") 
+										span Node
+									li
+										img.tech-svg(src="src/img/tech/ruby.svg", alt="")
+										span Ruby
+									li
+										img.tech-svg(src="src/img/tech/python.svg", alt="")
+										span Python
+									li
+										img.tech-svg(src="src/img/tech/php.svg", alt="")
+										span PHP
+									li
+										img.tech-svg(src="src/img/tech/net.svg", alt="")
+										span .NET
+
+					#panel3v.tabs-panel
+						.grid-x.grid-margin-y
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Front-end
+									li
+										img.tech-svg(src="src/img/tech/electron.svg", alt="")
+										span Electron
+									li
+										img.tech-svg(src="src/img/tech/react.svg", alt="")
+										span react
+									li
+										img.tech-svg(src="src/img/tech/vue.svg", alt="")
+										span Vue
+									li
+										img.tech-svg(src="src/img/tech/angular.svg", alt="")
+										span Angular
+									li
+										img.tech-svg(src="src/img/tech/apple.svg", alt="")
+										span Mac OS
+									li
+										img.tech-svg(src="src/img/tech/window.svg", alt="")
+										span Windows
+									li
+										img.tech-svg(src="src/img/tech/linux.svg", alt="")
+										span linux
+
+							.cell.small-6.medium-6.text-center
+								ul
+									h4 Back-end
+									li
+										
+										img.tech-svg(src="src/img/tech/node.svg", alt="") 
+										span Node
+									li
+										img.tech-svg(src="src/img/tech/ruby.svg", alt="")
+										span Ruby
+									li
+										img.tech-svg(src="src/img/tech/python.svg", alt="")
+										span Python
+									li
+										img.tech-svg(src="src/img/tech/php.svg", alt="")
+										span PHP
+									li
+										img.tech-svg(src="src/img/tech/net.svg", alt="")
+										span .NET
+
 
 #whyus.section.grid-container.margin-bottom-big
 	.section-head.text-center
